@@ -3,8 +3,8 @@ $vk = new VKAPI();
 $cb = new cbAPI();
  
 class VKAPI{
-    private $token = '65f95ef8c2caec7a9359e28f174b1c40b48057822a917bd438e80d9b74e73f5fef0ddc98c7828abfe45e6';
-    private $v = 5.92;
+    private $token = 'b1596525e11fa2674e71c7acc070654cdb2d2e1857ec185167b044c89e87cb7d2e139f1c9700f60cf310c';
+    private $v = 5.95;
     private $url = 'https://api.vk.com/method/';
    
     public function request ($method, $params) {
@@ -34,7 +34,7 @@ class VKAPI{
  
 class cbAPI {
     private $confirm = 'a67fbb41';
-    private $secret = 'fuckme';
+    private $secret = '';
    
     public function ok ($response) {
         if($response !== null) http_response_code($response);
